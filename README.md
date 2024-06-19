@@ -8,6 +8,23 @@
 You can install the package using pip:
 
 ```sh
-pip install .
+pip install git+https://github.com/thaarres/add_axo_logo.git
+
+```
+
+And then use it the following way
+```python
+import matplotlib.pyplot as plt
+from add_axo_logo import add_logo
+
+fig, ax = plt.subplots()
+ax.plot([0, 1], [0, 1])  # Simple plot for demonstration
+
+# Add logo to the upper right corner
+add_logo(ax, logo='title', corner='upper right', zoom=0.2)
+#add_logo(ax, logo='logo', corner='upper right', zoom=0.2)
+
+plt.show()
+
 
 
