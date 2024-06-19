@@ -8,6 +8,10 @@ setup(
         'matplotlib',
     ],
     include_package_data=True,
+    package_data={
+        '': ['*.png'],
+        'add_axo_logo': ['*.png'],
+    },
     license='MIT',
     description='A package to add the AXO a logo to a corner of a Matplotlib plot.',
     long_description=open('README.md').read(),
