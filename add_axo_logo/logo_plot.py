@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+import os
 
 def add_logo(ax, logo='logo', corner='upper right', zoom=0.1):
     """
@@ -25,9 +26,12 @@ def add_logo(ax, logo='logo', corner='upper right', zoom=0.1):
     plt.show()
 
     """
-    logo_path = 'add_axo_logo/logos/AXOL1TL_Logo.png'
+
+    package_path = os.path.dirname(__file__)
+    logo_path = os.path.join(package_path, 'logos', 'AXOL1TL_Logo.png')
+
     if logo=='title':
-        logo_path = 'add_axo_logo/logos/AXOL1TL_Title.png'
+        logo_path = os.path.join(package_path, 'logos', 'AXOL1TL_Title.png')
 
     # Read the logo image
     img = mpimg.imread(logo_path)
