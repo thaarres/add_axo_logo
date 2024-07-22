@@ -25,8 +25,8 @@ add_logo(ax, logo='title', corner='upper right', zoom=0.2)
 #add_logo(ax, logo='logo', corner='upper right', zoom=0.2)
 
 plt.show()
-
-![Logo Example](https://github.com/thaarres/add_axo_logo/blob/4bbec00f093b9f0d3f7a5a7ef8284f4b82a69595/add_axo_logo/logos/add_logo_example.png)
+```
+![Logo Example](https://github.com/thaarres/add_axo_logo/blob/b1f062363275c7b36d7d18a07a8e6ae154b5a83d/add_axo_logo/logos/add_logo_example.png)
 
 
 
